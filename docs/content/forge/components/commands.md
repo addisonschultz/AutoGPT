@@ -1,6 +1,6 @@
-# 🛠️ Commands
+# Commands
 
-Commands are a way for the agent to do anything; e.g. interact with the user or APIs and use tools. They are provided by components that implement the `CommandProvider` [⚙️ Protocol](./protocols.md). Commands are functions that can be called by the agent, they can have parameters and return values that will be seen by the agent.
+Commands are a way for the agent to do anything; e.g. interact with the user or APIs and use tools. They are provided by components that implement the `CommandProvider` [⚙️ Protocol](protocols.md). Commands are functions that can be called by the agent, they can have parameters and return values that will be seen by the agent.
 
 ```py
 class CommandProvider(Protocol):

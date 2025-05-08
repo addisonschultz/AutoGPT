@@ -1,6 +1,6 @@
-# ⚙️ Protocols
+# Protocols
 
-Protocols are *interfaces* implemented by [Components](./components.md) used to group related functionality. Each protocol needs to be handled explicitly by the agent at some point of the execution. We provide a comprehensive list of built-in protocols that are already handled in the built-in `Agent`, so when you inherit from the base agent all built-in protocols will work!
+Protocols are _interfaces_ implemented by [Components](components.md) used to group related functionality. Each protocol needs to be handled explicitly by the agent at some point of the execution. We provide a comprehensive list of built-in protocols that are already handled in the built-in `Agent`, so when you inherit from the base agent all built-in protocols will work!
 
 **Protocols are listed in the order of the default execution.**
 
@@ -84,11 +84,11 @@ class CalculatorComponent(CommandProvider):
 
 The agent will be able to call this command, named `multiply` with two arguments and will receive the result. The command description will be: `Multiplies two numbers.`
 
-To learn more about commands see [🛠️ Commands](./commands.md).
+To learn more about commands see [🛠️ Commands](commands.md).
 
 ## Order-dependent protocols
 
-The order of components implementing order-dependent protocols is important.
+The order of components implementing order-dependent protocols is important.\
 Some components may depend on the results of components before them.
 
 ### `MessageProvider`
@@ -127,7 +127,7 @@ class LoggerComponent(AfterParse):
         logger.info(f"Response: {response}")
 ```
 
-### `ExecutionFailure` 
+### `ExecutionFailure`
 
 Protocol called when the execution of the command fails.
 
